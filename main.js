@@ -19,3 +19,32 @@ function analyzeNumber() {
 
 
 // Analyze Functions
+
+function getSign(num) {
+
+    if (num > 0) { // Return Positive
+        return 'pos';
+    } else if (num == 0) { // Return Zero
+        return 'zero';
+    } else if (num < 0) { // Return Negative
+        return 'neg';
+    }
+}
+
+function evenOrOdd(num) {
+
+    if (num % 2 == 0) { // Return Even
+        return 'even';
+    } else { // Return Odd
+        return 'odd';
+    }
+}
+
+function multipleOf10(num) {
+
+    if (num % 10 == 0) { // Return True
+        return Boolean(num);
+    } else { // Return False
+        return Boolean();
+    }
+}
